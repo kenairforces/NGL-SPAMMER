@@ -1,3 +1,176 @@
-#encode by kenairforces
-import marshal, zlib, base64
-exec(marshal.loads(zlib.decompress(base64.b64decode(b'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'))))
+# CODE BY KENAIRFORCES
+# DO NOT CLAIM THIS TOOLS
+# DO NOT SELL THIS TOOLS
+# RECODE? GIVE AUTHOR NAME
+# THANKS TO
+# - ALLAH
+# - ME
+# - MY PC
+
+
+import sys, threading, time, random, requests, argparse, os
+from PyQt5 import QtWidgets, QtCore, QtGui
+from PyQt5.QtCore import QPropertyAnimation, QRect
+from rich.console import Console
+from rich.panel import Panel
+from rich.text import Text
+from rich import print as rprint
+
+# ================== ARGUMENT PARSER ==================
+parser = argparse.ArgumentParser(
+    description="💀 [NGL SPAMMER - MODERN MODE by KENAIRFORCES] 💀\n🔥 CLI/GUI Hybrid for Maximum DOMINATION 🔥",
+    formatter_class=argparse.RawTextHelpFormatter
+)
+parser.add_argument('--cli', action='store_true', help="🔥 Aktifin CLI mode (buat Termux / no GUI)")
+parser.add_argument('--user', type=str, help="🎯 Username target NGL (tanpa https://ngl.link/)")
+parser.add_argument('--msg', type=str, help="💬 Pesan spam, pisah pake koma (contoh: hai,tes,kamu siapa?)")
+parser.add_argument('--dur', type=int, help="⏱ Durasi spam (dalam detik)")
+parser.add_argument('--threads', type=int, default=5, help="⚙️ Jumlah thread spam (default = 5)")
+args = parser.parse_args()
+
+
+# ================== GLOBAL ==================
+stop_flag = False
+console = Console()
+cooldown_time = 20
+
+# ================== SPAM FUNCTION ==================
+def spam_ngl(target_user, messages, duration):
+    global stop_flag
+    end_time = time.time() + duration
+    while time.time() < end_time and not stop_flag:
+        msg = random.choice(messages)
+        device_id = ''.join(random.choices('abcdefghijklmnopqrstuvwxyz0123456789', k=16))
+        payload = {
+            "username": target_user,
+            "question": msg,
+            "deviceId": device_id,
+            "gameSlug": "",
+            "referrer": ""
+        }
+        try:
+            res = requests.post("https://ngl.link/api/submit", json=payload, headers={"Content-Type": "application/json"})
+            if res.status_code == 429:
+                rprint(f"[bold red]🚫 RATE LIMITED:[/bold red] 429 DETECTED! Cooling down...")
+                time.sleep(cooldown_time)
+                continue
+            rprint(f"[bold green]✅ SENT:[/bold green] {msg} [cyan]| Status:[/cyan] {res.status_code}")
+        except Exception as e:
+            rprint(f"[red]❌ ERROR:[/red] {e}")
+        time.sleep(random.uniform(2, 5))  # Random delay to avoid detection
+
+def start_multi_spam(username, messages, duration, thread_count=5):
+    threads = []
+    for _ in range(thread_count):
+        t = threading.Thread(target=spam_ngl, args=(username, messages, duration))
+        t.daemon = True
+        threads.append(t)
+        t.start()
+    for t in threads:
+        t.join()
+
+# ================== CLI MODE ==================
+def run_cli():
+    console.rule("[bold red]💀 CLI MODE ENABLED BY KENAIRFORCES 💀")
+    console.print(Panel(f"[bold green]🎯 Target:[/bold green] {args.user}\n[cyan]💬 Messages:[/cyan] {args.msg}\n[yellow]⏱ Duration:[/yellow] {args.dur}s\n[magenta]🚀 Threads:[/magenta] {args.threads}", title="NGL SPAMMER", style="bold white"))
+    console.rule("[bold green]SENDING STARTED")
+    start_multi_spam(args.user, args.msg.split(","), args.dur, args.threads)
+
+if args.cli and args.user and args.msg and args.dur:
+    run_cli()
+    sys.exit(0)
+
+# ================== GUI MODE ==================
+class NGLSpammerGUI(QtWidgets.QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("💣 NGL Spammer GUI v2")
+        self.setGeometry(200, 200, 460, 320)
+        self.setStyleSheet("""
+            QWidget {
+                background-color: #0f0f0f;
+                color: #e0e0e0;
+                font-size: 15px;
+                font-family: 'Segoe UI';
+            }
+            QLineEdit, QPushButton {
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #555;
+                background-color: #1e1e1e;
+                color: white;
+            }
+            QPushButton:hover {
+                background-color: #333;
+            }
+        """)
+        self.init_ui()
+        self.animate_window()
+
+    def animate_window(self):
+        self.anim = QPropertyAnimation(self, b"geometry")
+        self.anim.setDuration(800)
+        self.anim.setStartValue(QRect(100, 100, 100, 100))
+        self.anim.setEndValue(QRect(200, 200, 460, 320))
+        self.anim.start()
+
+    def init_ui(self):
+        layout = QtWidgets.QVBoxLayout()
+
+        self.link_input = QtWidgets.QLineEdit(placeholderText="https://ngl.link/username")
+        layout.addWidget(self.link_input)
+
+        self.message_input = QtWidgets.QLineEdit(placeholderText="Pesan (pisah pake koma)")
+        layout.addWidget(self.message_input)
+
+        self.duration_input = QtWidgets.QLineEdit()
+        self.duration_input.setPlaceholderText("Durasi dalam detik (contoh: 30)")
+        layout.addWidget(self.duration_input)
+
+        self.thread_input = QtWidgets.QLineEdit()
+        self.thread_input.setPlaceholderText("Jumlah thread (default 5)")
+        layout.addWidget(self.thread_input)
+
+        btn_layout = QtWidgets.QHBoxLayout()
+        self.start_button = QtWidgets.QPushButton("🔥 MULAI")
+        self.stop_button = QtWidgets.QPushButton("🛑 STOP")
+        btn_layout.addWidget(self.start_button)
+        btn_layout.addWidget(self.stop_button)
+        layout.addLayout(btn_layout)
+
+        self.start_button.clicked.connect(self.start_spam)
+        self.stop_button.clicked.connect(self.stop_spam)
+
+        self.setLayout(layout)
+
+    def start_spam(self):
+        try:
+            link = self.link_input.text().strip()
+            if not link.startswith("https://ngl.link/"):
+                raise ValueError("Link NGL gak valid!")
+
+            username = link.replace("https://ngl.link/", "").strip()
+            messages = [m.strip() for m in self.message_input.text().split(",") if m.strip()]
+            duration = int(self.duration_input.text().strip())
+            threads = int(self.thread_input.text().strip()) if self.thread_input.text().strip() else 5
+
+            if not messages:
+                raise ValueError("Isi minimal 1 pesan!")
+
+            global stop_flag
+            stop_flag = False
+            threading.Thread(target=start_multi_spam, args=(username, messages, duration, threads)).start()
+            QtWidgets.QMessageBox.information(self, "✅ GASSKAN!", "Spammer jalan di background WAK!")
+        except Exception as e:
+            QtWidgets.QMessageBox.critical(self, "❌ ERROR", str(e))
+
+    def stop_spam(self):
+        global stop_flag
+        stop_flag = True
+        QtWidgets.QMessageBox.information(self, "🛑 STOP", "Spamming dihentikan WAK!")
+
+# ================== RUN GUI ==================
+app = QtWidgets.QApplication(sys.argv)
+window = NGLSpammerGUI()
+window.show()
+sys.exit(app.exec_())
