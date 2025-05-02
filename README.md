@@ -27,19 +27,19 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
 
 2. **Clone repo dan install dependencies**
    ```bash
-   git clone https://github.com/kenairforces/nglspammer-v6.git
-   cd nglspammer-v6
+   https://github.com/kenairforces/NGL-SPAMMER.git
+   cd NGL-SPAMMER
    pip install -r requirements.txt
    ```
 
 3. **Jalankan GUI**
    ```bash
-   python nglspamv6.py
+   python start.py
    ```
 
 4. **Jalankan CLI**
    ```bash
-   python nglspamv6.py --cli --user USERNAME --msg "halo,kirim lagi,test" --dur 60 --threads 5
+   python start.py --cli --user USERNAME --msg "halo,kirim lagi,test" --dur 60 --threads 5
    ```
 
 ---
@@ -53,14 +53,14 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
 
 2. **Clone repo dan install dependencies**
    ```bash
-   git clone https://github.com/kenairforces/nglspammer-v6.git
-   cd nglspammer-v6
+   https://github.com/kenairforces/NGL-SPAMMER.git
+   cd NGL-SPAMMER
    pip install -r requirements.txt
    ```
 
 3. **Jalankan mode CLI**
    ```bash
-   python nglspamv6.py --cli --user USERNAME --msg "halo,test,apa kabar" --dur 60 --threads 5
+   python start.py --cli --user USERNAME --msg "halo,test,apa kabar" --dur 60 --threads 5
    ```
 
 ---
@@ -69,6 +69,7 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
 
 | Flag         | Keterangan                                    |
 |--------------|-----------------------------------------------|
+| `--help`      | Bantuan                                      |
 | `--cli`      | Aktifkan mode CLI                             |
 | `--user`     | Username NGL target (tanpa `https://`)        |
 | `--msg`      | Daftar pesan, pisahkan dengan koma `,`        |
@@ -77,7 +78,7 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
 
 Contoh:
 ```bash
-python nglspamv6.py --cli --user kenairforces --msg "halo,kirim test,pesanku" --dur 120 --threads 10
+python start.py --cli --user kenairforces --msg "halo,kirim test,pesanku" --dur 120 --threads 10
 ```
 
 ---
