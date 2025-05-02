@@ -16,7 +16,7 @@ from rich.panel import Panel
 from rich.text import Text
 from rich import print as rprint
 
-# ================== ARGUMENT PARSER ==================
+# ========== SETUP ARGPARSE 🔥 ==========
 parser = argparse.ArgumentParser(
     description="💀 [NGL SPAMMER - MODERN MODE by KENAIRFORCES] 💀\n🔥 CLI/GUI Hybrid for Maximum DOMINATION 🔥",
     formatter_class=argparse.RawTextHelpFormatter
@@ -28,8 +28,7 @@ parser.add_argument('--dur', type=int, help="⏱ Durasi spam (dalam detik)")
 parser.add_argument('--threads', type=int, default=5, help="⚙️ Jumlah thread spam (default = 5)")
 args = parser.parse_args()
 
-
-# ================== GLOBAL ==================
+# ========== GLOBAL STATE ⚡ ==========
 stop_flag = False
 console = Console()
 cooldown_time = 20
@@ -59,6 +58,7 @@ def spam_ngl(target_user, messages, duration):
             rprint(f"[red]❌ ERROR:[/red] {e}")
         time.sleep(random.uniform(2, 5))  # Random delay to avoid detection
 
+# ========== MULTI THREAD SPAMMER 💣 ==========
 def start_multi_spam(username, messages, duration, thread_count=5):
     threads = []
     for _ in range(thread_count):
@@ -69,13 +69,14 @@ def start_multi_spam(username, messages, duration, thread_count=5):
     for t in threads:
         t.join()
 
-# ================== CLI MODE ==================
+# ========== MODE CLI FULL SEND 💀 ==========
 def run_cli():
     console.rule("[bold red]💀 CLI MODE ENABLED BY KENAIRFORCES 💀")
     console.print(Panel(f"[bold green]🎯 Target:[/bold green] {args.user}\n[cyan]💬 Messages:[/cyan] {args.msg}\n[yellow]⏱ Duration:[/yellow] {args.dur}s\n[magenta]🚀 Threads:[/magenta] {args.threads}", title="NGL SPAMMER", style="bold white"))
     console.rule("[bold green]SENDING STARTED")
     start_multi_spam(args.user, args.msg.split(","), args.dur, args.threads)
 
+# ========== DETEKSI MODE & JALANKAN CLI JIKA DIPANGGIL 🔥 ==========
 if args.cli and args.user and args.msg and args.dur:
     run_cli()
     sys.exit(0)
@@ -174,3 +175,4 @@ app = QtWidgets.QApplication(sys.argv)
 window = NGLSpammerGUI()
 window.show()
 sys.exit(app.exec_())
+
