@@ -27,7 +27,7 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
 
 2. **Clone repo dan install dependencies**
    ```bash
-   https://github.com/kenairforces/NGL-SPAMMER.git
+   git clone https://github.com/kenairforces/NGL-SPAMMER.git
    cd NGL-SPAMMER
    pip install -r requirements.txt
    ```
@@ -53,7 +53,7 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
 
 2. **Clone repo dan install dependencies**
    ```bash
-   https://github.com/kenairforces/NGL-SPAMMER.git
+   git clone https://github.com/kenairforces/NGL-SPAMMER.git
    cd NGL-SPAMMER
    pip install -r requirements.txt
    ```
