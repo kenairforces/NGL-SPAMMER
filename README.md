@@ -99,5 +99,5 @@ This tool is for **educational purposes only**. Use it responsibly.
 
 ## 🧠 AUTHOR
 
-- 🚀 Telegram: [@kenairforces](https://t.me/kenairforces)
+- 🚀 Telegram: [@kenairforces](https://t.me/Kenairforces)
 - 🎯 GitHub: [kenairforces](https://github.com/kenairforces)
