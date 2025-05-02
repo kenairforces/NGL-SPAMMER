@@ -77,7 +77,7 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
 
 | Flag         | Keterangan                                    |
 |--------------|-----------------------------------------------|
-| `--help`      | Bantuan                                      |
+| `-h`         | Bantuan                                       |
 | `--cli`      | Aktifkan mode CLI                             |
 | `--user`     | Username NGL target (tanpa `https://`)        |
 | `--msg`      | Daftar pesan, pisahkan dengan koma `,`        |
