@@ -29,15 +29,19 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
    ```bash
    git clone https://github.com/kenairforces/NGL-SPAMMER.git
    cd NGL-SPAMMER
-   pip install -r requirements.txt
    ```
 
-3. **Jalankan GUI**
+3. **Install dependencies win (windows)**
+   ```bash
+   pip install -r requirementswin.txt
+   ```
+
+4. **Jalankan GUI**
    ```bash
    python start.py
    ```
 
-4. **Jalankan CLI**
+5. **Jalankan CLI**
    ```bash
    python start.py --cli --user USERNAME --msg "halo,kirim lagi,test" --dur 60 --threads 5
    ```
@@ -55,10 +59,14 @@ Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker 
    ```bash
    git clone https://github.com/kenairforces/NGL-SPAMMER.git
    cd NGL-SPAMMER
-   pip install -r requirements.txt
    ```
 
-3. **Jalankan mode CLI**
+3. **Install dependencies tx (termux)**
+   ```bash
+   pip install -r requirementstx.txt
+   ```
+
+4. **Jalankan mode CLI**
    ```bash
    python start.py --cli --user USERNAME --msg "halo,test,apa kabar" --dur 60 --threads 5
    ```
