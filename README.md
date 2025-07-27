@@ -96,6 +96,7 @@ python start.py --cli --user kenairforces --msg "halo,kirim test,pesanku" --dur 
 - ❗ Jangan spam terlalu cepat, bisa kena ban IP.
 - ❗ Rate limit (429) otomatis di-handle dengan sleep 20 detik.
 - ❗ Bisa digunakan 24 jam nonstop (asal koneksi stabil).
+- ❗ Jika ingin digunakan lagi kamu tutup dulu window nya jalanin lagi soalnya kalo di stop script tidak bisa mulai lagi males nge fix njir
 
 ---
 
