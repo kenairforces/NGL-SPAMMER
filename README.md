@@ -1,5 +1,5 @@
 
-# 💣 NGL SPAMMER v6 - GUI + CLI by @kenairforces
+# 💣 NGL SPAMMER v2 - GUI + CLI by @kenairforces
 
 🔥 Tool spam brutal ke NGL forms dengan tampilan GUI modern (PyQt5) dan mode CLI buat Termux warriors.  
 Full power! Ada anti-429 cooldown, multithread, emoji support, dan vibes hacker maksimal‼️
