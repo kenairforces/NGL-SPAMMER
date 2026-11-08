@@ -1,0 +1,28 @@
+name: MasterCode Terminal
+run-name: mc-terminal ${{ inputs.session }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: Perintah yang dijalankan
+        required: true
+        type: string
+      session:
+        description: ID sesi (dipakai MasterCode untuk menemukan run ini)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Jalankan perintah
+        env:
+          MC_COMMAND: ${{ inputs.command }}
+        run: bash -c "$MC_COMMAND"
